@@ -1,0 +1,116 @@
+@import url('https://fonts.googleapis.com/css?family=Hind&display=swap');
+
+html,body {
+	padding: 0;
+	margin: 0;
+	height: 100vh;
+	width: 100vw;
+
+	overflow: hidden;
+
+	background-image: url("/images/backgrounds/0.png");
+    background-size: cover;
+    background-repeat: no-repeat;
+	background-position: 50% 50%;
+	
+	font-family: 'Hind', sans-serif;
+	transition: background-image 3s linear;
+}
+
+
+
+
+.background-image {
+	position: absolute;
+	top: -10px;
+	bottom:-10px;
+	right:-10px;
+	left: -10px;
+}
+
+.background-image img {
+	height: 100%;
+	width: 100%;
+}
+
+.container {
+	position: absolute;
+	top:0;
+	bottom:0;
+	right: 25%;
+	left:  25%;
+
+	
+}
+
+.nav {
+	background: rgb(255, 255, 255);
+
+	width: 100%;
+
+	display: flex;
+	flex-direction: row;
+}
+
+.nav * {
+	flex-grow: 1;
+}
+
+
+.nav-icon img {
+	margin-left: 32px;
+	margin-top: 8px;
+	height: 64px;
+	text-align: center;
+}
+
+
+.nav-buttons {
+	display: flex;
+	flex-direction: row;
+	align-items: center;
+}
+
+.nav-buttons .nav-button {
+	flex-grow: 1;
+	border: 1px solid grey;
+	border-radius: 5px;
+	text-align:  center;
+	margin-left: 5px;
+	margin-right: 5px;
+	padding: 2px;
+}
+
+
+
+.nav-social {
+	display: flex;
+	flex-direction: row;
+	align-items: center;
+}
+
+.nav-social-icon {
+	flex-grow: 1;
+	border: 1px solid grey;
+	border-radius: 5px;
+	text-align:  center;
+	margin-left: 5px;
+	margin-right: 5px;
+}
+
+
+.content {
+	padding-top: 16px;
+	height: 100%;
+	width: 100%;
+	
+	background-color: rgba(14, 14, 14, 0.295);
+	
+	text-align: center;
+	
+	
+}
+
+.content .application {
+	height: 100%;
+}
