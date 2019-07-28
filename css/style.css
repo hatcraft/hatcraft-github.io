@@ -1,6 +1,6 @@
 @import url('https://fonts.googleapis.com/css?family=Hind&display=swap');
 
-html,body {
+body {
 	padding: 0;
 	margin: 0;
 	height: 100vh;
@@ -8,6 +8,7 @@ html,body {
 
 	overflow: hidden;
 
+	background-color: rgb(53, 53, 53);
 	background-image: url("/images/backgrounds/0.png");
     background-size: cover;
     background-repeat: no-repeat;
@@ -50,10 +51,6 @@ html,body {
 
 	display: flex;
 	flex-direction: row;
-}
-
-.nav * {
-	flex-grow: 1;
 }
 
 
@@ -113,4 +110,23 @@ html,body {
 
 .content .application {
 	height: 100%;
+}
+
+#gallery {
+	display: flex;
+}
+
+#gallery .item {
+	flex: 1;
+	border: 1px solid white;
+	width: auto;
+
+	overflow: hidden;
+}
+
+#gallery .item img {
+	top: 0;
+	bottom: 0;
+	right: 0;
+	left: 0;
 }

@@ -10,7 +10,10 @@
 	src="https://code.jquery.com/jquery-3.4.1.min.js"
 	integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo="
 	crossorigin="anonymous"></script>
-	<script src="js/main.js"></script>
+
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/axios/0.19.0/axios.js"></script>
+
+	
 </head>
 
 <body>
@@ -24,51 +27,45 @@
 
 
 
-			<div class="nav-icon">
+			<div class="nav-icon" style="flex-basis: 0; padding-right: 32px; padding-left: 32px;">
 				<img src="images/hatcraft-6.png">
 			</div>
 
 
 
-			<div class="nav-buttons">
+			<div class="nav-buttons" style="flex-basis: auto; flex-grow: 1; padding-right: 64px;">
 
-				<div class="nav-button">
+				<div class="nav-button" onclick="navClick(this, 'home')">
 					HOME
 				</div>
 
-				<div class="nav-button">
+				<div class="nav-button" onclick="navClick(this, 'gallery')">
 					GALLERY
 				</div>
 
-				<div class="nav-button">
+				<div class="nav-button" onclick="navClick(this, 'help')">
 					HELPFUL STUFF
 				</div>
 
-				<div class="nav-button">
+				<div class="nav-button" onclick="navClick(this, 'application')">
 					APPLICATION
 				</div>
 
-				<div class="nav-button">
+				<div class="nav-button" onclick="navClick(this, 'donations')">
 					DONATIONS
 				</div>
 
 			</div>
 
-
-
-			<div class="nav-social"></div>
-
 		</div>
 
-
-
-		<div class="content">
-			<iframe class="application" src="https://docs.google.com/forms/d/e/1FAIpQLSfL-9E0YY06haciEKpyJVG7BfKtjSonj2mEqduMLayCeG7P9w/viewform?embedded=true" width="700" height="520" frameborder="0" marginheight="0" marginwidth="0">Loading…</iframe>
+		
+		<div class="content" id="content">
 		</div>
-		
-		
 
 	</div>
 	
+
+	<script src="js/main.js"></script>
 	
 </body>
